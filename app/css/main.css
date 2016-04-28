@@ -1,25 +1,37 @@
-	body {font-family: sans-serif;
-		margin:0px}
-	h1,h2{text-align: center}
-	.wrap{background-color: rgb(200,200,200);
-		opacity 0.2;
-		width:50%;
-		max-width: 450px;
-		min-width: 380px;
-		border: 1px solid rgb(51,51,51);
-		margin: auto;}
-	p{font-weight: bold}
-	.persdata {float:right;}
-	.freg,.delivery,.uved{border: 1px solid rgb(0,75,65);
-		border-radius: 5px;
-		margin: 5px 5px;
-		padding:0 7px 0 7px
+body {font-family: sans-serif;
+	margin:0px}
+h1,h2{text-align: center}
+.wrap{background-color: rgb(200,200,200);
+	opacity 0.2;
+	width:50%;
+	max-width: 450px;
+	min-width: 380px;
+	border: 1px solid rgb(51,51,51);
+	margin: auto;}
+p{font-weight: bold}
+.persdata {float:right;}
+.freg,.delivery,.uved{border: 1px solid rgb(0,75,65);
+	border-radius: 5px;
+	margin: 5px 5px;
+	padding:0 7px 0 7px
 }
-	.deliveryp {float:right;
-		margin-bottom: 15px }
-	.delirys {float:left;
-		font-weight: bold;}
-	.delivery{height: 270px} 
-	.btn {height:25px;
-		margin: auto;
-		}
+.deliveryp {float:right;
+	margin-bottom: 15px }
+.delirys {float:left;
+	font-weight: bold;}
+.delivery{height: 270px} 
+.btn {height:25px;
+	margin: auto;
+	}
+
+/** Тултипы */
+.has-error {
+  background-color: #fad2d1 !important;
+  border-color: #f97e76 !important;
+}
+.qtip-mystyle {
+  background-color: #f97e76;
+  border-color: #f97e76;
+  color: #ffffff;
+  font-size: 13px;
+}

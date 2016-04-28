@@ -3,25 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Форма регистрации</title>
-	<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
-	<script src = "js/mainf.js" defer></script>
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" href="css/main.css" type='text/css'/>
+	<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+	<script src="bower/qtip2/jquery.qtip.min.js"></script>
+    <script src="js/validation.js"></script>
+	<script src = "js/mainf.js" defer></script>
 </head>
 <body>
 	<div class="wrap">
-		<form action="#file.php" method="GET">
+		<form action="#file.php" method="GET" id="myForm">
 			<div class="freg">
 				<h1>Форма регистрации</h1>
-				<p>ФИО <input type="text" name="fio" class="persdata" id="fio" size="40"></p>
-				<p>Email <input type="email" name='email_' class="persdata" id="email2" size="39"></p>
-				<p>Номер телефона <input type="tel" name='tel' class="persdata" id="telnum" size="22"></p>
-				<p>Город <input type="text" name='city' class="persdata" id="city" size="35"></p>
-				<p>Дата рождения	<input type="date" name='bdate' class="persdata" id="bdate" size="40"></p>
+				<p>ФИО <input type="text" name="fio" class="persdata" id="fio" size="40" data-position="right" data-content="Вы не ввели ФИО"></p>
+				<p>Email <input type="email" name='email_' class="persdata" id="email2" size="39" data-position="right" data-content="Вы не ввели email"></p>
+				<p>Номер телефона <input type="tel" name='tel' class="persdata" id="telnum" size="22" data-position="right" data-content="Вы не ввели телефон"></p>
+				<p>Город <input type="text" name='city' class="persdata" id="city" size="35" data-position="right" data-content="Вы не ввели свой город"></p>
+				<p>Дата рождения	<input type="date" name='bdate' class="persdata" id="bdate" size="40" data-position="right" data-content="Вы не ввели дату рождения"></p>
 			</div>
 			<div class="delivery">
 				<h2>Параметры доставки</h2>
-				<div><div class='delirys'>Адрес</div> <textarea class="deliveryp" name="adress" id="adrdelivery" cols="40" rows="10"></textarea></div>
-				<p>	<div class='delirys'>Почтовый индекс</div> <input type="text" name="posti" class="deliveryp" id="posti" pattern="[0-9]{5}" maxlength="5">
+				<div><div class='delirys'>Адрес</div> <textarea class="deliveryp" name="adress" id="adrdelivery" cols="40" rows="10" data-position="right" data-content="Вы не ввели адрес доставки"></textarea></div>
+				<p>	<div class='delirys'>Почтовый индекс</div> <input type="text" name="posti" class="deliveryp" id="posti" pattern="[0-9]{5}" maxlength="5" data-position="right" data-content="Вы не ввели почтовый индекс">
 				</p>
 			</div>
 			<div class="uved">
