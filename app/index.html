@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма регистрации</title>
+	<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+	<script src = "js/mainf.js" defer></script>
+	<link rel="stylesheet" href="css/main.css" type='text/css'/>
+</head>
+<body>
+	<div class="wrap">
+		<form action="#file.php" method="GET">
+			<div class="freg">
+				<h1>Форма регистрации</h1>
+				<p>ФИО <input type="text" name="fio" class="persdata" id="fio" size="40"></p>
+				<p>Email <input type="email" name='email_' class="persdata" id="email2" size="39"></p>
+				<p>Номер телефона <input type="tel" name='tel' class="persdata" id="telnum" size="22"></p>
+				<p>Город <input type="text" name='city' class="persdata" id="city" size="35"></p>
+				<p>Дата рождения	<input type="date" name='bdate' class="persdata" id="bdate" size="40"></p>
+			</div>
+			<div class="delivery">
+				<h2>Параметры доставки</h2>
+				<div><div class='delirys'>Адрес</div> <textarea class="deliveryp" name="adress" id="adrdelivery" cols="40" rows="10"></textarea></div>
+				<p>	<div class='delirys'>Почтовый индекс</div> <input type="text" name="posti" class="deliveryp" id="posti" pattern="[0-9]{5}" maxlength="5">
+				</p>
+			</div>
+			<div class="uved">
+				<h2>Предпочитаемый способ получения уведомлений</h2>
+				<p><input type="radio" name="uv" value="email"> По Email <br>
+					<input type="radio" name="uv" value="tel"> По телефону <br>
+					<input type="radio" name="uv" value="dntntf"> Не уведомлять меня
+				</p>
+			</div>
+				<div class="btn"><input type="submit" name='send_' class="button_" id="send" value="ОТПРАВИТЬ ДАННЫЕ">
+								<input type="reset" name='reset_' class="button_" id="reset" value="Очистить">
+								<input type="button" name="bbn" id="bbn" value='инд'>
+								<input type="button" name="bbe" id="bbe" value='элп'>
+
+				</div>
+		</form>
+	</div>
+</body>
+</html>

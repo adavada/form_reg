@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "description": "testing github",
+  "main": "app.js",
+  "authors": [
+    "Dudnik"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/adavada/testing",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.1.1",
+    "jquery": "1.*"
+  }
+}

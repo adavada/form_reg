@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "testing github",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adavada/testing.git"
+  },
+  "author": "Dudnik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adavada/testing/issues"
+  },
+  "homepage": "https://github.com/adavada/testing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1"
+  }
+}
